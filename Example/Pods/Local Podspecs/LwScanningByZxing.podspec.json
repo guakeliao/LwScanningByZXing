@@ -1,0 +1,25 @@
+{
+  "name": "LwScanningByZxing",
+  "version": "0.1.0",
+  "summary": "A short description of LwScanningByZxing.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/LwScanningByZxing",
+  "license": "MIT",
+  "authors": {
+    "liaowei": "598951856@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/LwScanningByZxing.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "LwScanningByZxing": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+PODS:
+  - FBSnapshotTestCase (2.0.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.0.4)
+  - FBSnapshotTestCase/Core (2.0.4)
+  - FBSnapshotTestCase/SwiftSupport (2.0.4):
+    - FBSnapshotTestCase/Core
+  - LwScanningByZxing (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - LwScanningByZxing (from `../`)
+
+EXTERNAL SOURCES:
+  LwScanningByZxing:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: d94cf34841c9e77390e29009e8e2713479d48753
+  LwScanningByZxing: 6855fddd02ac493ca87508b612d27f0c570ac0fa
+
+COCOAPODS: 0.38.2

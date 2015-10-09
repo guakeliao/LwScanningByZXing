@@ -1,0 +1,6 @@
+framework module Pods_LwScanningByZxing_Tests {
+  umbrella header "Pods-LwScanningByZxing_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
