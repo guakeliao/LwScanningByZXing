@@ -1,12 +1,13 @@
 source 'https://github.com/CocoaPods/Specs.git'
-use_frameworks!
+
+platform :ios, '7.0'
 
 target 'LwScanningByZxing_Example', :exclusive => true do
   pod "LwScanningByZxing", :path => "../"
+  pod 'ZXingObjC', '~> 3.1.0'
 end
 
 target 'LwScanningByZxing_Tests', :exclusive => true do
   pod "LwScanningByZxing", :path => "../"
-
-  pod 'FBSnapshotTestCase'
+  pod 'ZXingObjC', '~> 3.1.0'
 end

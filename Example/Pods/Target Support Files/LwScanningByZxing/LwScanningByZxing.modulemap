@@ -1,6 +1,0 @@
-framework module LwScanningByZxing {
-  umbrella header "LwScanningByZxing-umbrella.h"
-
-  export *
-  module * { export * }
-}

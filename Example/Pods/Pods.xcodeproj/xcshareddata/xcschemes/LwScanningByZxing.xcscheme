@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "44EBFE5505FA33EEA2146106"
-               BuildableName = "LwScanningByZxing.framework"
+               BlueprintIdentifier = "3D455751C5F1B0590B1BB32A"
+               BuildableName = "libLwScanningByZxing.a"
                BlueprintName = "LwScanningByZxing"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
