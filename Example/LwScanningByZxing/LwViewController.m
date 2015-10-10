@@ -26,9 +26,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-        [self prepareForData];
-        [self prepareForView];
-        [self prepareForAction];
+    [self prepareForData];
+    [self prepareForView];
+    [self prepareForAction];
 }
 
 - (void)viewWillLayoutSubviews
@@ -58,8 +58,6 @@
 
 - (void)prepareForData
 {
-   
-
 }
 
 - (void)prepareForView
@@ -68,8 +66,10 @@
 
 - (void)prepareForAction
 {
+    self.scanView.callBack = ^(id data) {
+      NSLog(@"%@", data);
+    };
 }
-
 
 #pragma mark
 #pragma mark Event Response
