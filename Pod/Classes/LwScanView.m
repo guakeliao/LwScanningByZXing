@@ -64,10 +64,18 @@
                    (rect.size.height - MIN(rect.size.width * 3 / 4, rect.size.height * 3 / 4)) / 2,
                    MIN(rect.size.width * 3 / 4, rect.size.height * 3 / 4),
                    MIN(rect.size.width * 3 / 4, rect.size.height * 3 / 4));
+    self.readLineView.frame =
+        CGRectMake(self.readImageView.frame.origin.x, self.readImageView.frame.origin.y,
+                   self.readImageView.frame.size.width, 10);
 
     self.capture.layer.frame = self.bounds;
-    self.capture.scanRect = self.readImageView.frame;
-    
+    //    self.capture.scanRect = self.readImageView.frame;
+
+    CGAffineTransform captureSizeTransform =
+        CGAffineTransformMakeScale(320 / self.frame.size.width, 480 / self.frame.size.height);
+    self.capture.scanRect =
+        CGRectApplyAffineTransform(self.readImageView.frame, captureSizeTransform);
+
     CALayer *imageLayer = [CALayer layer];
     imageLayer.frame = self.layer.bounds;
     imageLayer.backgroundColor =
@@ -197,7 +205,6 @@
     // Vibrate
     AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
     [self stop];
-
     if (self.callBack)
     {
         self.callBack(result.text);
