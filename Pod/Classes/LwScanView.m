@@ -184,6 +184,7 @@
 - (void)start
 {
     [self loopDrawLine];
+    self.capture.delegate = self;
     [self.capture start];
 }
 - (void)stop
@@ -192,6 +193,7 @@
     self.readLineView.frame =
         CGRectMake(self.readImageView.frame.origin.x, self.readImageView.frame.origin.y,
                    self.readImageView.frame.size.width, 0);
+    self.capture.delegate = nil;
     [self.capture stop];
 }
 
