@@ -22,6 +22,8 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		6607C2CD1BC8F0F100BD5F0A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6607C2CC1BC8F0F100BD5F0A /* LaunchScreen.xib */; settings = {ASSET_TAGS = (); }; };
+		6641EA961BCCA42D00F3EF3A /* LwCreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6641EA941BCCA42D00F3EF3A /* LwCreateViewController.m */; settings = {ASSET_TAGS = (); }; };
+		6641EA971BCCA42D00F3EF3A /* LwCreateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6641EA951BCCA42D00F3EF3A /* LwCreateViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		6B519FB224107F115946CC4E /* libPods-LwScanningByZxing_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 423B17A92FE9233D10021C75 /* libPods-LwScanningByZxing_Example.a */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -59,6 +61,9 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		6607C2CC1BC8F0F100BD5F0A /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		6641EA931BCCA42D00F3EF3A /* LwCreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LwCreateViewController.h; sourceTree = "<group>"; };
+		6641EA941BCCA42D00F3EF3A /* LwCreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LwCreateViewController.m; sourceTree = "<group>"; };
+		6641EA951BCCA42D00F3EF3A /* LwCreateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LwCreateViewController.xib; sourceTree = "<group>"; };
 		7133713686E830068AEBD7BF /* LwScanningByZxing.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LwScanningByZxing.podspec; path = ../LwScanningByZxing.podspec; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8B5B30D02ABCEED62AB4EEEF /* Pods-LwScanningByZxing_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LwScanningByZxing_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-LwScanningByZxing_Example/Pods-LwScanningByZxing_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +142,9 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* LwViewController.h */,
 				6003F5A6195388D20070C39A /* LwViewController.m */,
+				6641EA931BCCA42D00F3EF3A /* LwCreateViewController.h */,
+				6641EA941BCCA42D00F3EF3A /* LwCreateViewController.m */,
+				6641EA951BCCA42D00F3EF3A /* LwCreateViewController.xib */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -208,6 +216,7 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				629C80D183C7F84EA5EBAFBB /* Copy Pods Resources */,
+				483B942F67A49F475815BE6C /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -227,6 +236,7 @@
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
 				68FC480841E1D6AD9375A693 /* Copy Pods Resources */,
+				F1998101DDFBC8813C7BD6FA /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -279,6 +289,7 @@
 			files = (
 				6607C2CD1BC8F0F100BD5F0A /* LaunchScreen.xib in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				6641EA971BCCA42D00F3EF3A /* LwCreateViewController.xib in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -295,6 +306,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		483B942F67A49F475815BE6C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LwScanningByZxing_Example/Pods-LwScanningByZxing_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		629C80D183C7F84EA5EBAFBB /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -355,6 +381,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		F1998101DDFBC8813C7BD6FA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LwScanningByZxing_Tests/Pods-LwScanningByZxing_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -363,6 +404,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* LwAppDelegate.m in Sources */,
+				6641EA961BCCA42D00F3EF3A /* LwCreateViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* LwViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

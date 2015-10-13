@@ -8,6 +8,7 @@
 
 #import "LwViewController.h"
 #import "LwScanView.h"
+#import "LwCreateViewController.h"
 
 @interface LwViewController ()
 
@@ -62,10 +63,19 @@
 
 - (void)prepareForView
 {
+    self.title = @"扫描二维码";
+    self.navigationItem.leftBarButtonItem =
+        [self barButtonItemWithTitle:@"生成" andAction:@selector(createImage:)];
+
+    //识别二维码
+    //    self.callBack = ^(id data) {
+    //        NSLog(@"%@", data);
+    //    };
 }
 
 - (void)prepareForAction
 {
+    //扫描二维码
     self.scanView.callBack = ^(id data) {
       NSLog(@"%@", data);
     };
@@ -73,7 +83,24 @@
 
 #pragma mark
 #pragma mark Event Response
+- (UIBarButtonItem *)barButtonItemWithTitle:(NSString *)title andAction:(SEL)action
+{
+    UIButton *buttonItem = [UIButton buttonWithType:UIButtonTypeCustom];
+    [buttonItem setTitle:title forState:UIControlStateNormal];
+    [buttonItem addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
+    [buttonItem sizeToFit];
+    UIBarButtonItem *barItem = [[UIBarButtonItem alloc] initWithCustomView:buttonItem];
+    return barItem;
+}
 
+- (void)createImage:(id)sender
+{
+    LwCreateViewController *createVC = [[LwCreateViewController alloc] init];
+//    [self presentViewController:[[UINavigationController alloc] initWithRootViewController:createVC]
+//          animated:YES
+//        completion:nil];
+    [self.navigationController pushViewController:createVC animated:YES];
+}
 #pragma mark
 #pragma mark Getter/Setter
 #pragma mark - Private Methods
