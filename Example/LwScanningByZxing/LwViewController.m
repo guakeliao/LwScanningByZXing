@@ -9,6 +9,7 @@
 #import "LwViewController.h"
 #import "LwScanView.h"
 #import "LwCreateViewController.h"
+#import "UIViewController+Recognize.h"
 
 @interface LwViewController ()
 
@@ -66,11 +67,8 @@
     self.title = @"扫描二维码";
     self.navigationItem.leftBarButtonItem =
         [self barButtonItemWithTitle:@"生成" andAction:@selector(createImage:)];
-
-    //识别二维码
-    //    self.callBack = ^(id data) {
-    //        NSLog(@"%@", data);
-    //    };
+    self.navigationItem.rightBarButtonItem =
+        [self barButtonItemWithTitle:@"相册" andAction:@selector(recognizePicture:)];
 }
 
 - (void)prepareForAction
@@ -96,10 +94,14 @@
 - (void)createImage:(id)sender
 {
     LwCreateViewController *createVC = [[LwCreateViewController alloc] init];
-//    [self presentViewController:[[UINavigationController alloc] initWithRootViewController:createVC]
-//          animated:YES
-//        completion:nil];
     [self.navigationController pushViewController:createVC animated:YES];
+}
+- (void)recognizePicture:(id)sender
+{
+    //识别二维码
+    [self recognizeImage:^(id string) {
+      NSLog(@"%@", string);
+    }];
 }
 #pragma mark
 #pragma mark Getter/Setter
