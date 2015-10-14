@@ -1,5 +1,5 @@
 PODS:
-  - LwScanningByZxing (0.1.0):
+  - LwScanningByZxing (0.2.0):
     - ZXingObjC (~> 3.1.0)
   - ZXingObjC (3.1.0):
     - ZXingObjC/All (= 3.1.0)
@@ -14,7 +14,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  LwScanningByZxing: e226ef5c5072940885e55831c987697544d4f31d
+  LwScanningByZxing: d96450939eed0325a72c1fb11d082d05bd0c947d
   ZXingObjC: bf15b3814f7a105b6d99f47da2333c93a063650a
 
 COCOAPODS: 0.39.0
