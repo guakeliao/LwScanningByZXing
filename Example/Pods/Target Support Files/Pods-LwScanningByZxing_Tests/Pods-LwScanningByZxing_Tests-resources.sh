@@ -64,8 +64,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "../../Pod/Assets/scanLine.png"
   install_resource "../../Pod/Assets/scanLine@2x.png"
   install_resource "../../Pod/Assets/scanLine@3x.png"
-  install_resource "UzysAssetsPickerController/UzysAssetsPickerController/Library/UzysAssetsPickerController.xib"
-  install_resource "UzysAssetsPickerController/UzysAssetsPickerController/Library/UzysAssetPickerController.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "../../Pod/Assets/scanBox.png"
@@ -74,8 +72,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "../../Pod/Assets/scanLine.png"
   install_resource "../../Pod/Assets/scanLine@2x.png"
   install_resource "../../Pod/Assets/scanLine@3x.png"
-  install_resource "UzysAssetsPickerController/UzysAssetsPickerController/Library/UzysAssetsPickerController.xib"
-  install_resource "UzysAssetsPickerController/UzysAssetsPickerController/Library/UzysAssetPickerController.bundle"
 fi
 
 mkdir -p "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
